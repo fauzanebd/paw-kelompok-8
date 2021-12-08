@@ -12,7 +12,7 @@ export default class AnimalTableRow extends Component {
     }
 
     deleteAnimal() {
-        axios.delete('http://localhost:8080/animals/delete-animal/' + this.props.obj._id)
+        axios.delete('http://paw8backend.herokuapp.com/animals/delete-animal/' + this.props.obj._id)
             .then((res) => {
                 console.log('Animal successfully deleted!')
             }).catch((error) => {

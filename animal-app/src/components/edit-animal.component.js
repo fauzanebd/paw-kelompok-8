@@ -67,7 +67,7 @@ export default class EditAnimal extends Component {
 
     };
 
-    axios.patch('http://localhost:8080/animals/update-animal/' + this.props.match.params.id, animalObject)
+    axios.patch('http://paw8backend.herokuapp.com/animals/update-animal/' + this.props.match.params.id, animalObject)
       .then((res) => {
         console.log(res.data)
         console.log('Animal successfully updated')
