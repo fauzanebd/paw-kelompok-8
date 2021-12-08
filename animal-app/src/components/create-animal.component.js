@@ -52,7 +52,7 @@ export default class CreateAnimal extends Component {
       adopted: this.state.adopted
     };
 
-    axios.post('http://paw8backend.herokuapp.com/animals/create-animal', animalObject)
+    axios.post('http://paw8backend.herokuapp.com/animals/create-animal/', animalObject)
       .then(res => console.log(res.data));
 
     //this.props.history.push('/')
