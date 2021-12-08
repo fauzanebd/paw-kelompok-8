@@ -15,7 +15,7 @@ export default class AnimalList extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:8080/animals/')
+    axios.get('https://paw8backend.herokuapp.com/animals/')
       .then(res => {
         this.setState({
           animals: res.data

@@ -26,7 +26,7 @@ export default class EditAnimal extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:8080/animals/edit-animal/' + this.props.match.params.id)
+    axios.get('https://paw8backend.herokuapp.com/animals/edit-animal/' + this.props.match.params.id)
       .then(res => {
         this.setState({
           name: res.data.name,
